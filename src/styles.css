@@ -1,1 +1,129 @@
 /* You can add global styles to this file, and also import other style files */
+
+#case-completed .service-type {
+	width: 18%;
+	display: table;
+	height: 100px;
+	float: left;
+	margin-right: 10px;
+}
+#case-completed .service-type span {
+	color: white;
+	font-weight: bold;
+	display: table-cell;
+	padding: 10px;
+	vertical-align: middle;
+}
+#case-completed .service-type-title {
+	width: 66%;
+	background-color: #993366;
+	font-size: 1.1em;
+}
+#case-completed .service-type-count {
+	width: 33%;
+	background-color: #cc6699;
+	text-align: center;
+	font-size: 2em;
+}
+#case-current .case-row {
+	padding: 0 15px;
+	border: 2px solid #cccccc;
+	display: table;
+	margin: auto;
+	margin-top: 10px;
+	height: 50px;
+	font-size: 1.1em;
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+#case-current .service-type-key {
+	padding: 5px 25px;
+	margin-right: 5px;
+	margin-left: 15px;
+	color: white;
+}
+#case-current .key-BV {
+	background-color: #00cc00;
+}
+#case-current .key-PA {
+	background-color: #ff6600;
+}
+#case-current .key-CoPay {
+	background-color: #9933ff;
+}
+#case-current .key-PAP {
+	background-color: #0099ff;
+}
+#case-current .key-PR {
+	background-color: #000000;
+}
+#case-current .status-key {
+	font-size: 2em;
+	vertical-align: middle;
+	margin-left: 15px;
+}
+#case-current .status-completed {
+	color: #00cc00;
+}
+#case-current .status-progress {
+	color: #9933ff;
+}
+#case-current .status-action {
+	color: #ff0000;
+}
+#case-list .cell-group {
+	font-weight: bold;
+	width: 210px;
+	display: inline-block;
+	
+	
+}
+#case-list .column-name {
+	text-align: left;
+}
+#case-list .column-name .status-key {
+	margin: 0;
+}
+#case-list .column-pid {
+	text-align: left;
+}
+#case-list .column-dob {
+	text-align: center;
+}
+#case-list .column-sid {
+	text-align: right;
+}
+#case-list .column-type {
+	text-align: right;
+
+}
+#case-list .column-type .service-type-key {
+	width: 80%;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	padding: 0;
+	text-align: center;
+}
+#case-list .key-BV:before {
+	content: 'Benifits Verification';
+}
+#case-list .key-PA:before {
+	content: 'Prior Authorization';
+}
+#case-list .key-CoPay:before {
+	content: 'CoPay';
+}
+#case-list .key-PAP:before {
+	content: 'PAP';
+}
+#case-list .key-PR:before {
+	content: 'Prescription Referral';
+}
+
+
+
+
+
+

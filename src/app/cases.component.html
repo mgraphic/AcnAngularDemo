@@ -1,0 +1,20 @@
+<div id="case-list">
+	<div class="case-row" *ngFor="let case of cases">
+		<div class="cell-group column-name">
+			<span class="{{ getStatusClassString(case.statusKey) }}"></span>
+			{{ case.name }}
+		</div>
+		<div class="cell-group column-pid">
+			Patient ID: {{ case.patientID }}
+		</div>
+		<div class="cell-group column-dob">
+			Date of Birth: {{ case.dob }}
+		</div>
+		<div class="cell-group column-sid">
+			Service ID: {{ case.serviceID }}
+		</div>
+		<div class="cell-group column-type">
+			<span class="service-type-key key-{{ case.service }}"></span>
+		</div>
+	</div>
+</div>

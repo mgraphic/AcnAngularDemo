@@ -1,3 +1,67 @@
-<h1>
-  {{title}}
-</h1>
+
+<h1>{{ title }}</h1>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>
+			<a class="Xcollapsed" role="button" data-toggle="collapse" href="#case-completed" aria-expanded="true" aria-controls="case-completed">
+				Completed Cases over the past 7 days
+			</a>
+		</h4>
+	</div>
+	<div id="case-completed" class="panel-body collapse in">
+		<div class="service-type">
+			<span class="service-type-title">Service Type Title</span>
+			<span class="service-type-count">1</span>
+		</div>
+		<div class="service-type">
+			<span class="service-type-title">Service Type</span>
+			<span class="service-type-count">20</span>
+		</div>
+		<div class="service-type">
+			<span class="service-type-title">Service Type Title</span>
+			<span class="service-type-count">33</span>
+		</div>
+		<div class="service-type">
+			<span class="service-type-title">Service Type</span>
+			<span class="service-type-count">4</span>
+		</div>
+		<div class="service-type">
+			<span class="service-type-title">Service Type</span>
+			<span class="service-type-count">5</span>
+		</div>
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h4>
+			<a class="Xcollapsed" role="button" data-toggle="collapse" href="#case-current" aria-expanded="true" aria-controls="case-current">
+				Current Cases
+			</a>
+		</h4>
+	</div>
+	<div id="case-current" class="panel-body collapse in">
+		<div id="service-type-key-legend" class="case-row">
+			<strong>Service Types:</strong>
+			<span class="service-type-key key-BV"></span>
+			Benifits Verification
+			<span class="service-type-key key-PA"></span>
+			Prior Authorization
+			<span class="service-type-key key-CoPay"></span>
+			CoPay
+			<span class="service-type-key key-PAP"></span>
+			PAP
+			<span class="service-type-key key-PR"></span>
+			Prescription Referral
+		</div>
+		<div id="status-key-legend" class="case-row">
+			<strong>Status Key:</strong>
+			<span class="status-key status-completed glyphicon glyphicon-ok-sign"></span>
+			Completed
+			<span class="status-key status-progress glyphicon glyphicon-info-sign"></span>
+			In-Progress
+			<span class="status-key status-action glyphicon glyphicon-remove-sign"></span>
+			Action Needed
+		</div>
+		<my-cases></my-cases>
+	</div>
+</div>
